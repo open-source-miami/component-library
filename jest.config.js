@@ -14,7 +14,7 @@ module.exports = {
       }
     ]
   ],
-  testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+  testMatch: ["<rootDir>/src/**/?(*.)test.{ts,tsx}"],
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
   globals: {
     NODE_ENV: "test"
@@ -26,7 +26,6 @@ module.exports = {
     "!**/types/**"
   ],
   coveragePathIgnorePatterns: [".stories.tsx", ".style.ts"],
-  coverageDirectory: "./test-results",
   // Testing setup files.
   setupFilesAfterEnv: ["<rootDir>/src/setupTests.ts"]
 };
