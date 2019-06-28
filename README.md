@@ -1,4 +1,5 @@
 # Open Source Miami's Component Library 
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 A React component library created so that we could standardize the design and behavior throughout all of our sites and products. We don't plan to make a full component library like Material, or Bootstrap. We are just planning to make whatever is needed to complete our projects, and accumulate all of the components over time.
 
@@ -52,6 +53,11 @@ If this is your first time contributing to an Open Source Project, maybe it woul
 
 ## Contributors
 
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table><tr><td align="center"><a href="https://github.com/aromanarguello"><img src="https://avatars0.githubusercontent.com/u/28843542?v=4" width="100px;" alt="aromanarguello"/><br /><sub><b>aromanarguello</b></sub></a><br /><a href="#infra-aromanarguello" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/open-source-miami/component-library/commits?author=aromanarguello" title="Tests">⚠️</a> <a href="https://github.com/open-source-miami/component-library/commits?author=aromanarguello" title="Code">💻</a></td></tr></table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 We are going to try to follow the [all-contributors](https://github.com/all-contributors/all-contributors#emoji-key) specification.
 
 We have a bot installed in all of our repos, to help us manage contributors list, for info on how to use it take a look at the docs [here](https://allcontributors.org/docs/en/bot/usage)
