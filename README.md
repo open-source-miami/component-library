@@ -55,7 +55,9 @@ If this is your first time contributing to an Open Source Project, maybe it woul
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-<table><tr><td align="center"><a href="https://github.com/aromanarguello"><img src="https://avatars0.githubusercontent.com/u/28843542?v=4" width="100px;" alt="aromanarguello"/><br /><sub><b>aromanarguello</b></sub></a><br /><a href="#infra-aromanarguello" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/open-source-miami/component-library/commits?author=aromanarguello" title="Tests">⚠️</a> <a href="https://github.com/open-source-miami/component-library/commits?author=aromanarguello" title="Code">💻</a></td></tr></table>
+
+<table><tr><td align="center"><a href="https://github.com/aromanarguello"><img src="https://avatars0.githubusercontent.com/u/28843542?v=4" width="100px;" alt="aromanarguello"/><br /><sub><b>aromanarguello</b></sub></a><br /><a href="#infra-aromanarguello" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/open-source-miami/component-library/commits?author=aromanarguello" title="Tests">⚠️</a> <a href="https://github.com/open-source-miami/component-library/commits?author=aromanarguello" title="Code">💻</a></td></tr>
+<tr><td align="center"><a href="http://sherwino.co"><img src="https://avatars2.githubusercontent.com/u/2348227?v=4" width="100px;" alt="Sherwino"/><br /><sub><b>Sherwino</b></sub></a><br /><a href="https://github.com/open-source-miami/component-library/commits?author=sherwino" title="Documentation">📖</a></td></tr></table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 We are going to try to follow the [all-contributors](https://github.com/all-contributors/all-contributors#emoji-key) specification.
