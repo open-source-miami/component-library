@@ -1,0 +1,23 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "sherwino",
+      "name": "Sherwino",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/2348227?v=4",
+      "profile": "http://sherwino.co",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "component-library",
+  "projectOwner": "open-source-miami",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
