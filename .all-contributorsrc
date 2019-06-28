@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "aromanarguello",
+      "name": "aromanarguello",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/28843542?v=4",
+      "profile": "https://github.com/aromanarguello",
+      "contributions": [
+        "infra",
+        "test",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "component-library",
+  "projectOwner": "open-source-miami",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
