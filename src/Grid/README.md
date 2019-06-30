@@ -1,5 +1,21 @@
+<h1>Grid</h1>
 
-<h1>Usage</h1>
+For a grid system, the component library levarages @rebass/grid system.
+
+Link: https://github.com/rebassjs/grid
+
+<h2>Basic use:</h2>
+
+```jsx
+<Flex>
+  <Box width={1 / 2} p={1}/>
+  <Box width={1 / 2} p={1}/>
+  <Box width={1 / 2} p={1}/>
+</Flex>
+```
+<!-- STORY -->
+
+<h2>Usage</h2>
 
 ```jsx
 import * as React from "react"
