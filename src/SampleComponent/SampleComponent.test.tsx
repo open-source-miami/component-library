@@ -4,6 +4,7 @@ import SampleComponent from "./SampleComponent.component"
 
 describe("Sample Component", () => {
   test("renders", () => {
-    render(<SampleComponent />)
+    const component = render(<SampleComponent />)
+    expect(component.getByText("Submit")).toBeInTheDocument()
   })
 })

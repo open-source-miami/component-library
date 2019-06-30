@@ -1,9 +1,12 @@
-import { configure } from "@storybook/react";
+import { addDecorator, configure } from "@storybook/react"
+import { addReadme } from "storybook-readme"
 
-const req = require.context("../src", true, /.stories.tsx$/);
+addDecorator(addReadme)
+
+const req = require.context("../src", true, /.stories.tsx$/)
 
 function loadStories() {
-  req.keys().forEach(req);
+  req.keys().forEach(filename => req(filename))
 }
 
-configure(loadStories, module);
+configure(loadStories, module)
