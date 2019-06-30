@@ -40,6 +40,16 @@
         "allow": ["error"]
       }
     ],
+    "@typescript-eslint/member-delimiter-style": {
+      "multiline": {
+        "delimiter": "semi",
+        "requireLast": false
+      },
+      "singleline": {
+        "delimiter": "semi",
+        "requireLast": false
+      }
+    },
     "import/no-extraneous-dependencies": "off",
     "import/named": "off",
     "react/prop-types": "off",
