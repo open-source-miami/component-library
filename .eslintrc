@@ -25,6 +25,8 @@
     }
   },
   "rules": {
+    "class-methods-use-this": ["error", { "exceptMethods": ["render" ]}],
+    "@typescript-eslint/semi": 0,
     "@typescript-eslint/indent": "off",
     "@typescript-eslint/interface-name-prefix": "always",
     "@typescript-eslint/explicit-function-return-type": [
