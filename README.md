@@ -1,7 +1,9 @@
-# Open Source Miami's Component Library 
+# Open Source Miami's Component Library
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e19d8b1e-882e-4c7a-9db4-170665a7aaff/deploy-status)](https://app.netlify.com/sites/osmiami-lib/deploys)
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
-A React component library created so that we could standardize the design and behavior throughout all of our sites and products. We don't plan to make a full component library like Material, or Bootstrap. We are just planning to make whatever is needed to complete our projects, and accumulate all of the components over time.
+A React component library created so that we could standardize the design and behavior throughout all of our sites and products. The objective is not to make a full component library like Material, or Bootstrap. We are just planning to make whatever is needed to complete our projects, and accumulate all of the components over time.
 
 ## Storybook
 
@@ -17,7 +19,7 @@ To start building components with Storybook, take a look at the documentation [h
 If you have Node and Typescript installed on your system getting started should be fairly simple. 
 
 
-1. Clone or Fork [the repo](https://github.com/open-source-miami/component-library)
+1. Clone or Fork [the repo](https://github.com/open-source-miami/component-library) (Should you clone or fork the repo? Checkout [Contributing](#contributing))
 
 ```sh
 
@@ -41,9 +43,24 @@ If you have Node and Typescript installed on your system getting started should 
 
 ```
 
-The script should open the local version of our component storybook in your default browser.
+The script should open the local version of our component storybook in your default browser. If all is well you should see our storybook on http://localhost:6006/
 
 If you need additional information about setting up your development environment take a look at our [setup doc](./docs/setup.md). 
+
+## Deploying this project
+
+The static version of the site is going to be deployed to [Netlify]((https://www.netlify.com/). Netlify makes it incredibly easy to deploy just give it authorization to access the repo, and let it know how to build the static files, in our case:
+
+```sh
+        npm run build-storybook
+```
+
+Then you just tell it where the static files are going to be stored, with most projects it would be called `build` or `dist`, but for this project static files are stored under `storybook-static`.
+
+See the status of our latest deployment: [![Netlify Status](https://api.netlify.com/api/v1/badges/e19d8b1e-882e-4c7a-9db4-170665a7aaff/deploy-status)](https://app.netlify.com/sites/osmiami-lib/deploys)
+
+Our site is hosted [here](https://osmiami-lib.netlify.com/)
+
 
 ## Contributing
 
@@ -72,7 +89,7 @@ We have a bot installed in all of our repos, to help us manage contributors list
 
 ## Components
 
-For a full list of components featured in this repo take a look at [components](./docs/components.md) doc, or better yet take a look at the Storybook online [here](#)
+For a full list of components featured in this repo take a look at [components](./docs/components.md) doc, or better yet take a look at the Storybook online [here](https://osmiami-lib.netlify.com/)
 
 ## Examples
 
