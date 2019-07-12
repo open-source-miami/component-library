@@ -19,7 +19,7 @@ To start building components with Storybook, take a look at the documentation [h
 If you have Node and Typescript installed on your system getting started should be fairly simple. 
 
 
-1. Clone or Fork [the repo](https://github.com/open-source-miami/component-library) (Should you clone or fork the repo? Checkout [Contributing](#contributing))
+1. Clone or Fork [the repo](https://github.com/open-source-miami/component-library) (Should you clone or fork the repo? we kind of talk about that in the [Contributing](#contributing) section)
 
 ```sh
 
@@ -49,7 +49,7 @@ If you need additional information about setting up your development environment
 
 ## Deploying this project
 
-The static version of the site is going to be deployed to [Netlify]((https://www.netlify.com/). Netlify makes it incredibly easy to deploy just give it authorization to access the repo, and let it know how to build the static files, in our case:
+The static version of the site is going to be deployed to [Netlify](https://www.netlify.com/). Netlify makes it incredibly easy to deploy just give it authorization to access the repo, and let it know how to build the static files, in our case:
 
 ```sh
         npm run build-storybook
