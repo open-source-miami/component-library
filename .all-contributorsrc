@@ -25,6 +25,16 @@
         "doc",
         "infra"
       ]
+    },
+    {
+      "login": "martindidiego",
+      "name": "Martin Di Diego",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/14933234?v=4",
+      "profile": "http://martindidiego.com",
+      "contributions": [
+        "infra",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7,
