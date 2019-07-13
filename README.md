@@ -1,7 +1,7 @@
 # Open Source Miami's Component Library
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e19d8b1e-882e-4c7a-9db4-170665a7aaff/deploy-status)](https://app.netlify.com/sites/osmiami-lib/deploys)
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
 
 A React component library created so that we could standardize the design and behavior throughout all of our sites and products. The objective is not to make a full component library like Material, or Bootstrap. We are just planning to make whatever is needed to complete our projects, and accumulate all of the components over time.
 
@@ -76,6 +76,7 @@ If this is your first time contributing to an Open Source Project, maybe it woul
   <tr>
     <td align="center"><a href="https://github.com/aromanarguello"><img src="https://avatars0.githubusercontent.com/u/28843542?v=4" width="100px;" alt="aromanarguello"/><br /><sub><b>aromanarguello</b></sub></a><br /><a href="#infra-aromanarguello" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/open-source-miami/component-library/commits?author=aromanarguello" title="Tests">⚠️</a> <a href="https://github.com/open-source-miami/component-library/commits?author=aromanarguello" title="Code">💻</a></td>
     <td align="center"><a href="http://sherwino.co"><img src="https://avatars2.githubusercontent.com/u/2348227?v=4" width="100px;" alt="Sherwino"/><br /><sub><b>Sherwino</b></sub></a><br /><a href="https://github.com/open-source-miami/component-library/commits?author=sherwino" title="Documentation">📖</a> <a href="#infra-sherwino" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+    <td align="center"><a href="http://martindidiego.com"><img src="https://avatars2.githubusercontent.com/u/14933234?v=4" width="100px;" alt="Martin Di Diego"/><br /><sub><b>Martin Di Diego</b></sub></a><br /><a href="#infra-martindidiego" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/open-source-miami/component-library/commits?author=martindidiego" title="Tests">⚠️</a></td>
   </tr>
 </table>
 
