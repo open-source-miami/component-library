@@ -7,3 +7,7 @@ storybook-static
 junit.xml
 
 coverage
+
+.DS_Store
+
+assets/.DS_Store
