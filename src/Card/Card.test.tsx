@@ -1,29 +1,37 @@
 import * as React from "react"
-import { render, cleanup } from "@testing-library/react"
-import Card from "./Card.component"
+import { cleanup, render } from "@testing-library/react"
+import Card from "./Card"
+import CardContent from "./CardContent"
 
 afterEach(cleanup)
 describe("Card Component Test", () => {
-  test("renders", () => {
-    render(<Card />)
+  it("renders", () => {
+    const { getByText } = render(<Card>Basic Card</Card>)
+    expect(getByText("Basic Card")).toBeInTheDocument()
   })
 
-  test("HTML attributes are added properly", () => {
-    const { getByTestId } = render(<Card className="card1" />)
-    expect(getByTestId("CardComponent").classList).toContain("card1")
+  it("passes html props", () => {
+    const { getByText } = render(<Card id="myCard">Card Component</Card>)
+
+    expect(getByText("Card Component")).toHaveAttribute("id", "myCard")
   })
 
-  test("Card Flip component doesnt allow more than 2 children", () => {
-    expect(() => {
-      render(
-        <Card.Flipper>
-          <Card>Card One Front</Card>
-          <Card>Card One Back</Card>
-          <Card>Card One Extra</Card>
-        </Card.Flipper>
-      )
-    }).toThrowError(
-      "<Card.Flipper> component must have 2 child <Card> components"
+  it("renders with content", () => {
+    const { getByText } = render(
+      <Card>
+        <CardContent>Card Content</CardContent>
+      </Card>
     )
+    expect(getByText("Card Content")).toBeInTheDocument()
+  })
+
+  it("passes html properties to content", () => {
+    const { getByText } = render(
+      <Card>
+        <CardContent id="myCardContent">Card Content</CardContent>
+      </Card>
+    )
+
+    expect(getByText("Card Content")).toHaveAttribute("id", "myCardContent")
   })
 })
