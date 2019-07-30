@@ -7,9 +7,9 @@ This component displays content in the format of a card
 
 
 ```jsx
-      <Card height="13rem">
+      <Card>
         <CardContent borderBottom="1px solid #ccc">
-          <Typography m="0" variant="h2" fontWeight="lighter">
+          <Typography variant="h2">
             Basic Card
           </Typography>
         </CardContent>
