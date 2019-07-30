@@ -23,7 +23,7 @@ stories.add("Card", () => {
 
   return (
     <Flex justifyContent="space-evenly">
-      <Card height="13rem">
+      <Card height="15rem">
         <CardContent borderBottom="1px solid #ccc">
           <Typography m="0" variant="h2" fontWeight="lighter">
             Basic Card
@@ -51,7 +51,7 @@ stories.add("Card", () => {
           height="13rem"
         />
         <CardContent mt="12rem">
-          <Typography variant="h1"> Card Box </Typography>
+          <Typography variant="h1"> Card With Image </Typography>
           <Typography variant="p">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
             illo, voluptate autem eum cumque aut distinctio provident earum
