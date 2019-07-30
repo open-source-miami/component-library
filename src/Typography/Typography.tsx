@@ -1,5 +1,5 @@
 import * as React from "react"
-import styled from "styled-components"
+import styled, { StyledFunction } from "styled-components"
 import {
   fontSize,
   fontStyle,
@@ -55,7 +55,8 @@ const typography = compose(
   textAlign
 )
 
-const returnStyled = (arg: string): any => styled[arg]
+const returnStyled = (arg: string): StyledFunction<React.FC<ITypography>> =>
+  styled[arg]
 
 const Typography: React.FC<ITypography> = props => {
   const StyledTypography = returnStyled(props.variant)<ITypography>`
