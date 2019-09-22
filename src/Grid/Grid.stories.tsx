@@ -47,3 +47,5 @@ storiesOf("Grid", module)
       </Flex>
     )
   })
+
+export default renderGridBoxes

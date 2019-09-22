@@ -2,7 +2,7 @@ import * as React from "react"
 import { storiesOf } from "@storybook/react"
 
 import CardReadMe from "./README.md"
-import Card from "./Card"
+import Card from "."
 import CardContent from "./CardContent"
 import Typography from "../Typography"
 import Flex from "../Flex"
