@@ -16,7 +16,7 @@ echo $(green "Ok, before you publish let's test your code 🧪")
 echo $(green "---------------------------------------------------- |")
 echo
 
-# Did test fail, returns 1 if yes, 0 if no.
+# Run test, and if test fail returns 1, 0 if no.
 npm run test
 did_tests_fail="$(echo $?)"
 
