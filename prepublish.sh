@@ -36,5 +36,5 @@ else
     echo $(green "Please don't forget to update version number")
     echo $(green "---------------------------------------------------- |")
     echo
-    echo ./node_modules/version-bump-prompt/bin/bump.js --commit --tag
+    ./node_modules/version-bump-prompt/bin/bump.js --commit --tag
 fi
