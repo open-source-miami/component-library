@@ -4,9 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "deploy": "./node_modules/version-bump-prompt/bin/bump.js --commit --tag",
     "start": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "test": "jest"
+    "test": "jest",
+      "preversion": "echo 'pre-version'",
+      "version": "echo 'version'",
+      "postversion": "echo 'post-version'"
   },
   "keywords": [],
   "author": "",
@@ -46,7 +50,8 @@
     "storybook-readme": "^5.0.5",
     "styled-components": "^4.3.2",
     "ts-jest": "^24.0.2",
-    "typescript": "^3.5.2"
+    "typescript": "^3.5.2",
+    "version-bump-prompt": "^5.0.5"
   },
   "dependencies": {
     "@rebass/grid": "^6.0.0",
