@@ -1,6 +1,6 @@
 {
   "name": "@osmiami/component-library",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "An open source React Component Library [![Netlify Status](https://api.netlify.com/api/v1/badges/e19d8b1e-882e-4c7a-9db4-170665a7aaff/deploy-status)](https://app.netlify.com/sites/osmiami-lib/deploys)",
   "main": "build/index.js",
   "module": "build/index.es.js",
