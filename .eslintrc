@@ -28,7 +28,7 @@
     "class-methods-use-this": ["error", { "exceptMethods": ["render" ]}],
     "@typescript-eslint/semi": 0,
     "@typescript-eslint/indent": "off",
-    "@typescript-eslint/interface-name-prefix": "always",
+    "@typescript-eslint/interface-name-prefix": 1,
     "@typescript-eslint/explicit-function-return-type": [
       "error",
       {
@@ -42,16 +42,7 @@
         "allow": ["error"]
       }
     ],
-    "@typescript-eslint/member-delimiter-style": {
-      "multiline": {
-        "delimiter": "semi",
-        "requireLast": false
-      },
-      "singleline": {
-        "delimiter": "semi",
-        "requireLast": false
-      }
-    },
+    "@typescript-eslint/member-delimiter-style": 1,
     "import/no-extraneous-dependencies": "off",
     "import/named": "off",
     "react/prop-types": "off",
