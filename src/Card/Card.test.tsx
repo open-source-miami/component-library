@@ -1,7 +1,6 @@
 import * as React from "react"
 import { cleanup, render } from "@testing-library/react"
 import Card from "./Card"
-import CardContent from "./CardContent"
 
 afterEach(cleanup)
 describe("Card Component Test", () => {
@@ -16,22 +15,26 @@ describe("Card Component Test", () => {
     expect(getByText("Card Component")).toHaveAttribute("id", "myCard")
   })
 
-  it("renders with content", () => {
-    const { getByText } = render(
-      <Card>
-        <CardContent>Card Content</CardContent>
-      </Card>
-    )
-    expect(getByText("Card Content")).toBeInTheDocument()
+  it("renders all subcomponents of the card", () => {
+      const { getByText } = render(
+          <Card>
+              <Card.Header>
+                  <Card.Title>Hello World</Card.Title>
+              </Card.Header>
+              <Card.Body>
+                  <Card.Text>
+                      Body Text
+                  </Card.Text>
+              </Card.Body>
+              <Card.Footer>
+                  Footer
+              </Card.Footer>
+          </Card>
+      )
+      expect(getByText("Hello World")).toBeInTheDocument();
+      expect(getByText("Body Text")).toBeInTheDocument();
+      expect(getByText("Footer")).toBeInTheDocument();
   })
 
-  it("passes html properties to content", () => {
-    const { getByText } = render(
-      <Card>
-        <CardContent id="myCardContent">Card Content</CardContent>
-      </Card>
-    )
-
-    expect(getByText("Card Content")).toHaveAttribute("id", "myCardContent")
-  })
 })
+

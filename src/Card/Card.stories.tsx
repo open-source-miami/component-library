@@ -3,9 +3,7 @@ import { storiesOf } from "@storybook/react"
 
 import CardReadMe from "./README.md"
 import Card from "./Card"
-import CardContent from "./CardContent"
-import Typography from "../Typography"
-import Flex from "../Flex"
+import Button from "../Button"
 
 const stories = storiesOf("Card", module).addParameters({
   readme: {
@@ -15,68 +13,67 @@ const stories = storiesOf("Card", module).addParameters({
 })
 
 stories.add("Card", () => {
-  const cardImageText = (content: string): JSX.Element => (
-    <Typography margin="1rem" fontWeight="lighter" color="#fff" variant="h2">
-      {content}
-    </Typography>
-  )
-
   return (
-    <Flex justifyContent="space-evenly">
-      <Card height="15rem">
-        <CardContent borderBottom="1px solid #ccc">
-          <Typography m="0" variant="h2" fontWeight="lighter">
-            Basic Card
-          </Typography>
-        </CardContent>
-        <CardContent>
-          <Typography variant="p">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex rerum
-            consequuntur iusto animi deleniti ducimus neque cum iste esse, et
-            itaque quaerat iure ullam quod doloremque provident optio quam sint!
-          </Typography>
-        </CardContent>
-        <CardContent borderTop="1px solid #ccc">
-          <Typography variant="span">Details</Typography>
-        </CardContent>
+    <div>
+      <Card
+        boxShadow="2px 4px 10px rgba(0, 0, 0, 0.3)"
+        m="1rem"
+        width="18rem"
+        border="1px solid #ccc"
+      >
+        <Card.Image src="http://lorempixel.com/400/200" />
+        <Card.Body>
+          <Card.Title>Card Title</Card.Title>
+          <Card.Subtitle>Subtitle</Card.Subtitle>
+          <Card.Text>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Exercitationem, soluta voluptates, modi tempora quo quaerat
+            molestiae quia nisi nihil fuga a repellat ad labore est ipsa animi
+            impedit iste possimus!
+          </Card.Text>
+          <Button m="0 0.5rem 0 0">Do Something</Button>
+          <Button>Do Something Else</Button>
+        </Card.Body>
       </Card>
 
-      <Card>
-        <CardContent
-          position="absolute"
-          backgroundImage={`url("https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/oitqabmddnnagdth6wyj/air-max-270-react-bauhaus-mens-shoes-DcpzJF.jpg")`}
-          backgroundSize="cover"
-          backgroundPosition="50% 60%"
-          width="100%"
-          height="13rem"
-        />
-        <CardContent mt="12rem">
-          <Typography variant="h1"> Card With Image </Typography>
-          <Typography variant="p">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-            illo, voluptate autem eum cumque aut distinctio provident earum
-            animi similique.
-          </Typography>
-        </CardContent>
-        <CardContent borderTop="1px solid #ccc">
-          <Typography m="0" variant="h4" textAlign="center">
-            BUY NOW!
-          </Typography>
-        </CardContent>
+      <Card m="1rem" width="18rem" border="1px solid #ccc">
+        <Card.Header>Header</Card.Header>
+        <Card.Body>
+          <Card.Text>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Exercitationem, soluta voluptates, modi tempora quo quaerat
+            molestiae quia nisi nihil fuga a repellat ad labore est ipsa animi
+            impedit iste possimus!
+          </Card.Text>
+        </Card.Body>
+        <Card.Footer>
+          <Button m="0 0.5rem 0 0">Do Something</Button>
+          <Button>Do Something Else</Button>
+        </Card.Footer>
       </Card>
 
       <Card
-        backgroundImage={`url("https://media.gq.com/photos/5c65b35e73213b217a33093f/3:4/w_2250%2Ch_3000%2Cc_limit/air-max-dia-1163.jpg")`}
+        m="1rem"
+        width="18rem"
+        background={`url('http://lorempixel.com/400/200')`}
         backgroundPosition="center"
         backgroundSize="cover"
+        color="#fff"
       >
-        <CardContent position="absolute" top="0" left="0">
-          {cardImageText("Air Max")}
-        </CardContent>
-        <CardContent position="absolute" bottom="0" right="0">
-          {cardImageText("$200")}
-        </CardContent>
+        <Card.Overlay background="rgba(0, 0, 0, 0.5)">
+          <Card.Body>
+            <Card.Title fontSize="2rem">Card Image</Card.Title>
+            <Card.Subtitle color="#fff">With Overlay</Card.Subtitle>
+            <Card.Text>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              perspiciatis voluptates autem neque laudantium placeat cupiditate
+              magnam! Molestiae, vel? Nemo fugit pariatur veniam! Alias
+              architecto, asperiores assumenda at omnis sed.
+            </Card.Text>
+          </Card.Body>
+          <Card.Footer>Lorem ipsum dolor sit amet.</Card.Footer>
+        </Card.Overlay>
       </Card>
-    </Flex>
+    </div>
   )
 })

@@ -6,12 +6,14 @@ import {
   bottom,
   top,
   left,
-  right
+  right,
+  alignItems,
+  justifySelf,
+  justifyItems
 } from "styled-system"
-import Box from "../Box"
-import { Card, bgAndBorders } from "./Card"
+import Box, { BoxProps } from "../Box"
 
-export type CardContent = Card & PositionProps
+export type CardContent = PositionProps & BoxProps
 
 const content = compose(
   position,
@@ -19,11 +21,12 @@ const content = compose(
   left,
   right,
   bottom,
-  bgAndBorders
+  alignItems,
+  justifySelf,
+  justifyItems
 )
 
 const CardContent = styled(Box)<CardContent>`
-  padding: 0.5rem;
   ${content}
 `
 export default CardContent
