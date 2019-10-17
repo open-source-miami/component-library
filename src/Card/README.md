@@ -6,7 +6,7 @@ This component displays content in the format of a card
 <h2>Basic Usage</h2>
 
 ```jsx
-<div>
+ <div>
       <Card
         boxShadow="2px 4px 10px rgba(0, 0, 0, 0.3)"
         m="1rem"
@@ -15,8 +15,8 @@ This component displays content in the format of a card
       >
         <Card.Image src="http://lorempixel.com/400/200" />
         <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Subtitle>Subtitle</Card.Subtitle>
+          <Card.Title fontSize="2rem">Card Title</Card.Title>
+          <Card.Subtitle fontWeight="lighter">Subtitle</Card.Subtitle>
           <Card.Text>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Exercitationem, soluta voluptates, modi tempora quo quaerat
@@ -47,7 +47,7 @@ This component displays content in the format of a card
       <Card
         m="1rem"
         width="18rem"
-        background="url(http://lorempixel.com/400/400)"
+        background={`url('http://lorempixel.com/400/200')`}
         backgroundPosition="center"
         backgroundSize="cover"
         color="#fff"

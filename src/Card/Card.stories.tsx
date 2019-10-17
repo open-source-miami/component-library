@@ -14,7 +14,7 @@ const stories = storiesOf("Card", module).addParameters({
 
 stories.add("Card", () => {
   return (
-    <div>
+    <div style={{ fontFamily: "Roboto" }}>
       <Card
         boxShadow="2px 4px 10px rgba(0, 0, 0, 0.3)"
         m="1rem"
@@ -23,8 +23,8 @@ stories.add("Card", () => {
       >
         <Card.Image src="http://lorempixel.com/400/200" />
         <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Subtitle>Subtitle</Card.Subtitle>
+          <Card.Title fontSize="2rem">Card Title</Card.Title>
+          <Card.Subtitle fontWeight="lighter">Subtitle</Card.Subtitle>
           <Card.Text>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Exercitationem, soluta voluptates, modi tempora quo quaerat

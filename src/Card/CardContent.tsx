@@ -11,7 +11,7 @@ import {
   justifySelf,
   justifyItems
 } from "styled-system"
-import Box, { BoxProps } from "../Box"
+import { Box, BoxProps } from "../Box"
 
 export type CardContent = PositionProps & BoxProps
 

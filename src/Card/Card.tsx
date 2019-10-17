@@ -18,11 +18,13 @@ import {
   fontFamily,
   fontWeight,
   fontSize,
-  backgroundColor
+  backgroundColor,
+  TextAlignProps,
+  textAlign
 } from "styled-system"
 import { ITypography } from "Typography/Typography"
-import Box, { BoxProps } from "../Box"
-import Typography from "../Typography"
+import { Box, BoxProps } from "../Box"
+import { Typography } from "../Typography"
 
 interface CardComposition {
   Body: React.FC<{}>
@@ -30,8 +32,8 @@ interface CardComposition {
   Text: React.FC<{}>
   Subtitle: React.FC<Partial<CardTitles>>
   Image: React.FC<ICardImage>
-  Header: React.FC<{}>
-  Footer: React.FC<{}>
+  Header: React.FC<Partial<TCard>>
+  Footer: React.FC<Partial<TCard>>
   Overlay: React.FC<BackgroundProps>
 }
 
@@ -53,7 +55,6 @@ const bg = compose(
 
 const StyledCard = styled(Box)<TCard>`
   ${bg}
-  font-family: Roboto, sans-serif;
   overflow: hidden;
 `
 
@@ -73,27 +74,31 @@ Card.defaultProps = {
 const CardBody = styled.div`
   padding: 1rem;
 `
-
-const CardHeader = styled.nav`
+const CardHeader = styled(Box)<TCard>`
   background-color: rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid #ccc;
   padding: 1rem;
   margin-bottom: 0;
 `
-const CardHeaderComponent: React.FC<{}> = ({ children, ...props }) => {
+const CardHeaderComponent: React.FC<TCard> = ({
+  children,
+  ...props
+}: React.PropsWithChildren<TCard>) => {
   return <CardHeader {...props}>{children}</CardHeader>
 }
 
 type CardTitles = FontSizeProps &
   FontWeightProps &
   FontFamilyProps &
+  TextAlignProps &
   ITypography
 
 const fonts = compose(
   fontFamily,
   fontSize,
   fontWeight,
-  fontWeight
+  fontWeight,
+  textAlign
 )
 
 const CardTitle = styled(Typography)<CardTitles>`
@@ -150,14 +155,14 @@ const CardImageComponent: React.FC<ICardImage> = (props: ICardImage) => {
   return <CardImage {...props} />
 }
 
-const CardFooter = styled.div`
+const CardFooter = styled(Box)<TCard>`
   margin-top: 0;
   border-top: 1px solid #ccc;
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.1);
 `
 
-const CardFooterComponent: React.FC<{}> = ({ children }) => {
+const CardFooterComponent: React.FC<TCard> = ({ children }) => {
   return <CardFooter>{children}</CardFooter>
 }
 
