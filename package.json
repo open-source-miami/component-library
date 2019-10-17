@@ -4,7 +4,7 @@
   "description": "",
   "main": "./build/lib",
   "scripts": {
-    "start": "start-storybook -p 6006",
+    "start": "tsc",
     "build-storybook": "build-storybook",
     "test": "jest"
   },

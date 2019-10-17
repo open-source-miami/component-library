@@ -31,7 +31,7 @@ export type Typography = FlexProps &
   SpaceProps &
   ColorProps
 
-interface ITypography extends Typography {
+export interface ITypography extends Typography {
   /**
    * React children
    */
@@ -43,7 +43,7 @@ interface ITypography extends Typography {
   /**
    * Font family selection
    */
-  fontFamily?: "Roboto" | "Notable"
+  fontFamily?: "Roboto" | "Notable" | "Mouse Memoirs"
 }
 
 const typography = compose(
@@ -58,21 +58,33 @@ const typography = compose(
 const returnStyled = (arg: string): StyledFunction<React.FC<ITypography>> =>
   styled[arg]
 
+const returnFont = ({ fontFamily }: ITypography): string => {
+  if (fontFamily) {
+    if (fontFamily === "Notable") {
+      return "Notable, sans-serif"
+    }
+    if (fontFamily === "Mouse Memoirs") {
+      return "Mouse Memoirs, sans-serif"
+    }
+  }
+  return "Roboto, sans-serif"
+}
+
 const Typography: React.FC<ITypography> = props => {
   const StyledTypography = returnStyled(props.variant)<ITypography>`
     ${color}
     ${typography}
     ${space}
     
-    font-family: ${(p: ITypography) =>
-      p.fontFamily === "Notable"
-        ? "Notable, sans-serif"
-        : "Roboto, sans-serif"};
+    font-family: ${p => returnFont(p)};
     font-face: {
       src: @import ('/assets/fonts/Notable-Regular.ttf')
     }
     font-face: {
       src: @import ('/assets/fonts/Roboto-Regular.ttf')
+    }
+    font-face: {
+      src: @import url('https://fonts.googleapis.com/css?family=Mouse+Memoirs&display=swap');
     }
  `
   return (

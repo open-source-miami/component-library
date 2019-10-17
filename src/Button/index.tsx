@@ -44,4 +44,4 @@ StyledButton.defaultProps = {
   padding: "0.5rem"
 }
 
-export default StyledButton
+export { StyledButton as Button }

@@ -6,5 +6,9 @@ import Button from "./index"
 const stories = storiesOf("Button", module)
 
 stories.add("Button", () => {
-  return <Button>Basic Button</Button>
+  return (
+    <>
+      <Button>Basic Button</Button>
+    </>
+  )
 })

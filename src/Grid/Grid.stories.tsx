@@ -1,7 +1,8 @@
 import * as React from "react"
-import { storiesOf } from "@storybook/react"
-import { Flex, Box } from "@rebass/grid"
 import styled from "styled-components"
+import { storiesOf } from "@storybook/react"
+import { Flex } from "../Flex"
+import { Box } from "../Box"
 import GridReadme from "./README.md"
 
 interface IBorder {

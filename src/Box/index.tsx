@@ -62,4 +62,4 @@ const Box = styled("div")<BoxProps>(
   layout
 )
 
-export default Box
+export { Box }
