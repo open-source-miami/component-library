@@ -3,7 +3,7 @@ import {
   BackgroundProps,
   compose,
   background,
-  backgroundColor,
+  color,
   backgroundPosition,
   backgroundSize,
   backgroundRepeat,
@@ -26,7 +26,7 @@ export type Card = BoxProps & BackgroundProps & BorderProps
 
 export const bgAndBorders = compose(
   background,
-  backgroundColor,
+  color,
   backgroundImage,
   backgroundPosition,
   backgroundSize,
