@@ -1,13 +1,23 @@
+# We don't want to commit node_modules
 node_modules
+**/node_modules
 
+# Since we are not using github pages we don't need to commit static files
 storybook-static
 
+# This is only for local development
 .env
 
+# Test results that we do not need to commit
 junit.xml
-
 coverage
 
+# MacOS files that we do not need to commit 
 .DS_Store
+**/.DS_Store
 
-assets/.DS_Store
+# When we test publish lib we create tar files, don't commit
+*.tgz
+
+# Don't need to upload transpiled code
+build

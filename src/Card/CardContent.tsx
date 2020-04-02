@@ -9,7 +9,7 @@ import {
   right
 } from "styled-system"
 import Box from "../Box"
-import { Card, bgAndBorders } from "./Card"
+import { Card, bgAndBorders } from "."
 
 export type CardContent = Card & PositionProps
 

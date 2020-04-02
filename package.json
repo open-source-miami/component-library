@@ -1,18 +1,33 @@
 {
-  "name": "opensource",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "@osmiami/component-library",
+  "version": "1.1.2",
+  "description": "An open source React Component Library [![Netlify Status](https://api.netlify.com/api/v1/badges/e19d8b1e-882e-4c7a-9db4-170665a7aaff/deploy-status)](https://app.netlify.com/sites/osmiami-lib/deploys)",
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "jsnext:main": "build/index.es.js",
   "scripts": {
-    "start": "start-storybook -p 6006",
+    "build": "./build.sh",
     "build-storybook": "build-storybook",
-    "test": "jest"
+    "start": "start-storybook -p 6006",
+    "test": "jest",
+    "prepublishOnly": "./prepublish.sh"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "React",
+    "TypeScript",
+    "Node",
+    "Storybook",
+    "Components",
+    "Library",
+    "NPM Package",
+    "Open Source"
+  ],
+  "author": "open-source-miami",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.4.5",
+    "@storybook/react": "^5.1.9",
+    "@testing-library/jest-dom": "^4.1.0",
     "@testing-library/react": "^8.0.1",
     "@types/jest": "^24.0.15",
     "@types/node": "^12.0.10",
@@ -22,10 +37,10 @@
     "@types/storybook-readme": "^5.0.3",
     "@types/storybook__react": "^4.0.2",
     "@types/styled-components": "^4.1.16",
-    "@typescript-eslint/eslint-plugin": "^1.10.2",
-    "@typescript-eslint/parser": "^1.10.2",
+    "@typescript-eslint/eslint-plugin": "^2.3.0",
+    "@typescript-eslint/parser": "^2.3.0",
     "awesome-typescript-loader": "^5.2.1",
-    "eslint": "^5.16.0",
+    "eslint": "^6.4.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-airbnb-typescript": "^4.0.0",
     "eslint-config-prettier": "^5.0.0",
@@ -37,20 +52,43 @@
     "eslint-plugin-react": "^7.13.0",
     "eslint-plugin-react-hooks": "^1.6.0",
     "jest": "^24.8.0",
-    "jest-dom": "^3.5.0",
     "jest-junit": "^6.4.0",
     "prettier": "^1.18.2",
-    "react": "^16.8.6",
     "react-docgen-typescript-loader": "^3.1.0",
-    "react-dom": "^16.8.6",
-    "storybook-readme": "^5.0.5",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "rollup": "^1.21.4",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-typescript2": "^0.24.2",
+    "storybook-readme": "^5.0.8",
     "styled-components": "^4.3.2",
     "ts-jest": "^24.0.2",
-    "typescript": "^3.5.2"
+    "typescript": "^3.5.2",
+    "version-bump-prompt": "^5.0.5"
   },
   "dependencies": {
     "@rebass/grid": "^6.0.0",
-    "@storybook/react": "^5.1.9",
     "babel-loader": "^8.0.6"
-  }
+  },
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "styled-components": "^4.3.2"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "files": [
+    "build"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/open-source-miami/component-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/open-source-miami/component-library/issues"
+  },
+  "homepage": "https://github.com/open-source-miami/component-library#readme"
 }
